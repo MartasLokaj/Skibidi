@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fyzika | Praxe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-mode="">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">MARTINI AND KIKINI</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="teorie.html">Teorie</a>
+        <a class="active" href="praxe.html">Praxe</a>
+        <a href="infografika.html">Infografika</a>
+        <a href="zajimavosti.html">Zajímavosti</a>
+        <a href="zdroje.html">Zdroje</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== ZRCADLA ===== -->
+    <section class="topic topic-zrcadla">
+      <section class="theory-split">
+        <div class="container theory-grid">
+
+          <!-- LEFT -->
+          <div class="theory-left">
+            <h1 class="theory-title">
+              Využití<br>
+              zrcadel<br>
+              <span class="theory-title-accent">(kde se to využívá)</span>
+            </h1>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="theory-right">
+
+            <div class="big-card">
+              <h2>Využití zrcadel</h2>
+
+              <p>
+                Využití zrcadel spočívá v řízeném odrazu světla,
+                díky kterému můžeme měnit směr paprsků,
+                vytvářet obrazy a kontrolovat šíření světla
+                v technice i běžném životě.
+              </p>
+
+              <h3>Kde se zrcadla využívají:</h3>
+
+              <ul>
+                <li>Zpětná a boční zrcátka v dopravě</li>
+                <li>Periskopy (např. v ponorkách)</li>
+                <li>Kosmetická a zvětšovací zrcadla</li>
+                <li>Teleskopy v astronomii</li>
+                <li>Mikroskopy</li>
+                <li>Laserové systémy</li>
+                <li>Solární elektrárny (soustředění světla)</li>
+                <li>Bezpečnostní zrcadla v obchodech a na křižovatkách</li>
+                <li>Lékařské přístroje (např. zubní zrcátka)</li>
+                <li>Architektura a design interiérů</li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ===== RENTGEN (zatím placeholder) ===== -->
+    <section class="topic topic-rentgen">
+      <section class="theory-split">
+        <div class="container theory-grid">
+
+          <div class="theory-left">
+            <h1 class="theory-title">
+              Praxe:<br>
+              Rentgen a CT<br>
+              <span class="theory-title-accent">(kde se to využívá)</span>
+            </h1>
+          </div>
+
+          <div class="theory-right">
+            <div class="big-card">
+              <h2>Praxe rentgenu</h2>
+              <p>
+                Sem později vložíme konkrétní využití rentgenu
+                v medicíně, průmyslu a bezpečnostních systémech.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <script>
+    const mode = localStorage.getItem("mode") || "zrcadla";
+    document.body.setAttribute("data-mode", mode);
+  </script>
+
+</body>
+</html>

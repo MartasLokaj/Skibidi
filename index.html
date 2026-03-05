@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fyzika | Úvod</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Martini and Kikini
+      </a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Úvod</a>
+        <a href="teorie.html">Teorie</a>
+        <a href="praxe.html">Praxe</a>
+        <a href="infografika.html">Infografika</a>
+        <a href="zajimavosti.html">Zajímavosti</a>
+        <a href="zdroje.html">Zdroje</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="choice-hero" aria-label="Výběr tématu">
+      <button class="choice-panel" type="button" data-mode="rentgen"
+        style="background-image: url('assets/img/rentgen.png');">
+        <div class="choice-overlay"></div>
+        <div class="choice-content">
+          <div class="kicker kicker-hero">Neviditelné spektrum</div>
+          <h1 class="choice-title">RENTGEN</h1>
+        </div>
+      </button>
+
+      <button class="choice-panel" type="button" data-mode="zrcadla"
+        style="background-image: url('assets/img/zrcadlo.png');">
+        <div class="choice-overlay"></div>
+        <div class="choice-content">
+          <div class="kicker kicker-hero">Světlo a optika</div>
+          <h1 class="choice-title">ZRCDLA</h1>
+        </div>
+      </button>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll("[data-mode]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        localStorage.setItem("mode", btn.getAttribute("data-mode"));
+        window.location.href = "teorie.html";
+      });
+    });
+  </script>
+</body>
+</html>

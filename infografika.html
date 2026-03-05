@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fyzika | Infografika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-mode="">
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a class="brand" href="index.html">MARTINI AND KIKINI</a>
+
+    <nav class="nav-links">
+      <a href="index.html">Úvod</a>
+      <a href="teorie.html">Teorie</a>
+      <a href="praxe.html">Praxe</a>
+      <a class="active" href="infografika.html">Infografika</a>
+      <a href="zajimavosti.html">Zajímavosti</a>
+      <a href="zdroje.html">Zdroje</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="infografika">
+  <div class="container">
+
+    <h1 class="infografika-title">
+      Infografika
+    </h1>
+
+    <p class="infografika-subtitle">
+      Vizualizace principu odrazu světla a využití zrcadel.
+    </p>
+
+    <div class="infografika-image">
+
+      <!-- sem vložíš obrázek -->
+      <img src="assets/img/infografika-zrcadla.png" alt="Infografika zrcadel">
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<script>
+const mode = localStorage.getItem("mode") || "zrcadla";
+document.body.setAttribute("data-mode", mode);
+</script>
+
+</body>
+</html>
